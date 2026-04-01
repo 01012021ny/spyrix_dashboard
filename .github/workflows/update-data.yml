@@ -1,0 +1,112 @@
+name: update-dashboard-data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build dashboard JSON
+        env:
+          GOOGLE_SHEET_CSV_URL: ${{ vars.GOOGLE_SHEET_CSV_URL }}
+        run: |
+          python - <<'PY'
+          import os, csv, json, urllib.request
+          from io import StringIO
+          from datetime import datetime, UTC
+
+          default_url = 'https://docs.google.com/spreadsheets/d/1jvpjHu2qxKHhd55udb8uX6_JaOUDKaWVbu5BcdpqzQ0/export?format=csv&gid=0'
+          url = os.environ.get('GOOGLE_SHEET_CSV_URL') or default_url
+          text = urllib.request.urlopen(url, timeout=30).read().decode('utf-8')
+          rows = list(csv.reader(StringIO(text)))
+          header_idx = next(i for i, r in enumerate(rows) if r and r[0].strip() == 'Дата')
+          headers = [str(h).replace('\n', ' ').strip() for h in rows[header_idx]]
+          data_rows = [r for r in rows[header_idx+1:] if r and len(r) > 1 and str(r[0]).strip()]
+
+          norm_rows = []
+          for r in data_rows:
+              if len(r) < len(headers):
+                  r = r + [''] * (len(headers) - len(r))
+              elif len(r) > len(headers):
+                  r = r[:len(headers)]
+              norm_rows.append(r)
+
+          def col_idx(keyword):
+              k = keyword.lower()
+              for i, h in enumerate(headers):
+                  if k in h.lower():
+                      return i
+              return -1
+
+          cols = {
+              'date': col_idx('Дата'),
+              'traffic': col_idx('Новые пользователи по Google'),
+              'regFormView': col_idx('Register page view'),
+              'formStart': col_idx('Начал заполнение формы'),
+              'convTrafficForm': col_idx('Конверсия трафика на форму регистрации'),
+              'accountCreated': col_idx('Account created'),
+              'convFormReg': col_idx('Конверсия формы регистрации в регистрацию'),
+              'downloadCompleted': col_idx('Download completed'),
+              'downloadFailed': col_idx('Неуспешные скачивания'),
+              'downloadSavedBrowser': col_idx('Сохранил файл в браузере'),
+              'installRun': col_idx('Запуск дистрибутива для установки программы'),
+              'convRegDownload': col_idx('Конверсия регистраций в скачивание'),
+              'avgDataMinutes': col_idx('Среднее время минут появления данных'),
+              'pricingPage': col_idx('Страница купить (выбор тарифа). Все посещения. Уникальные'),
+              'checkoutOpen': col_idx('Checkout open'),
+              'paymentSuccess': col_idx('Payment success'),
+              'activeSubsTotal': col_idx('Количество активных подписок в mysql всего'),
+              'subsEnded': col_idx('Количество подписок закончились в этот день'),
+              'subsStarted': col_idx('Количество подписок стартовали в этот день'),
+              'revenue': col_idx('Деньги (PayPro) $'),
+              'avgCheck': col_idx('Средний чек $'),
+              'corpAccounts': col_idx('Аккаунты - корпоративные'),
+              'personalAccounts': col_idx('Аккаунты - частные'),
+          }
+
+          records = []
+          for r in norm_rows:
+              obj = {}
+              for key, idx in cols.items():
+                  obj[key] = r[idx] if idx != -1 and idx < len(r) else ''
+              records.append(obj)
+
+          payload = {
+              'generated_at': datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%SZ'),
+              'row_count': len(records),
+              'headers_count': len(headers),
+              'headers': headers,
+              'columns': cols,
+              'records': records,
+          }
+
+          os.makedirs('data', exist_ok=True)
+          with open('data/dashboard.json', 'w', encoding='utf-8') as f:
+              json.dump(payload, f, ensure_ascii=False, indent=2)
+          PY
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet -- data/dashboard.json; then
+            echo "No changes in dashboard.json"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dashboard.json
+          git commit -m "chore: update dashboard data"
+          git push
