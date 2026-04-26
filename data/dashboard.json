@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T03:57:42Z",
-  "row_count": 145,
+  "generated_at": "2026-04-26T06:20:01Z",
+  "row_count": 146,
   "headers_count": 85,
   "headers": [
     "Дата",
@@ -3739,6 +3739,31 @@
       "avgCheck": "$0,00",
       "corpAccounts": "3",
       "personalAccounts": "57"
+    },
+    {
+      "date": "25.04.2026",
+      "traffic": "1074",
+      "regFormView": "119",
+      "formStart": "78",
+      "convTrafficForm": "11,08%",
+      "accountCreated": "62",
+      "convFormReg": "52,10%",
+      "downloadCompleted": "45",
+      "downloadFailed": "0",
+      "downloadSavedBrowser": "40",
+      "installRun": "14",
+      "convRegDownload": "64,52%",
+      "avgDataMinutes": "1,26",
+      "pricingPage": "32",
+      "checkoutOpen": "0",
+      "paymentSuccess": "5",
+      "activeSubsTotal": "2 617,00",
+      "subsEnded": "$1,00",
+      "subsStarted": "$5,00",
+      "revenue": "$416,25",
+      "avgCheck": "$83,25",
+      "corpAccounts": "3",
+      "personalAccounts": "59"
     }
   ]
 }
