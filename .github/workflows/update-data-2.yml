@@ -1,4 +1,5 @@
 name: update-dashboard-data-2
+# trigger: re-run after the source sheet was opened to "anyone with the link"
 
 on:
   workflow_dispatch:
