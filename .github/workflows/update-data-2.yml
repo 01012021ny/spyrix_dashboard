@@ -1,0 +1,104 @@
+name: update-dashboard-data-2
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-data-2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build dashboard2 JSON
+        env:
+          GOOGLE_SHEET_CSV_URL_2: ${{ vars.GOOGLE_SHEET_CSV_URL_2 }}
+        run: |
+          python - <<'PY'
+          import os, csv, json, re, urllib.request
+          from io import StringIO
+          from datetime import datetime, UTC
+
+          default_url = 'https://docs.google.com/spreadsheets/d/1GCG1CLIxp_PIAPfQKmhpwyoXoCWhZkIr5NAqMx239OE/export?format=csv&gid=1903663848'
+          url = os.environ.get('GOOGLE_SHEET_CSV_URL_2') or default_url
+          text = urllib.request.urlopen(url, timeout=30).read().decode('utf-8')
+          rows = list(csv.reader(StringIO(text)))
+
+          # Heuristic: header row = the one with the most non-empty cells in the first 30 rows.
+          best_i, best_count = 0, 0
+          for i, r in enumerate(rows[:30]):
+              c = sum(1 for x in r if str(x).strip())
+              if c > best_count:
+                  best_count, best_i = c, i
+          header_idx = best_i
+
+          raw_headers = rows[header_idx]
+          headers = [re.sub(r'\s+', ' ', str(h).replace('\n', ' ')).strip() for h in raw_headers]
+          # trim trailing empty headers
+          while headers and headers[-1] == '':
+              headers.pop()
+
+          # de-duplicate empty/duplicate headers so JSON keys stay unique
+          seen = {}
+          final_headers = []
+          for i, h in enumerate(headers):
+              base = h if h else f'col_{i+1}'
+              key = base
+              n = 1
+              while key in seen:
+                  n += 1
+                  key = f'{base} ({n})'
+              seen[key] = True
+              final_headers.append(key)
+          headers = final_headers
+
+          data_rows = [r for r in rows[header_idx+1:] if any(str(x).strip() for x in r)]
+
+          records = []
+          for r in data_rows:
+              obj = {}
+              for i, h in enumerate(headers):
+                  v = r[i] if i < len(r) else ''
+                  obj[h] = v
+              records.append(obj)
+
+          payload = {
+              'generated_at': datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%SZ'),
+              'source': url,
+              'row_count': len(records),
+              'headers_count': len(headers),
+              'headers': headers,
+              'records': records,
+          }
+
+          os.makedirs('data', exist_ok=True)
+          with open('data/dashboard2.json', 'w', encoding='utf-8') as f:
+              json.dump(payload, f, ensure_ascii=False, indent=2)
+          print(f'Wrote data/dashboard2.json with {len(records)} rows / {len(headers)} columns')
+          PY
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet -- data/dashboard2.json; then
+            echo "No changes in dashboard2.json"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dashboard2.json
+          git commit -m "chore: update dashboard2 data"
+          git push
