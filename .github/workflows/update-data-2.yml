@@ -123,7 +123,10 @@ jobs:
               if not ref_headers:
                   ref_headers = headers
               col_rev = find_col(headers, 'выручка')
-              col_qty = find_col(headers, 'продаж')
+              col_qty = find_col(headers, 'продаж', 'шт')   # "Продажи, шт." — NOT "Канал продаж"
+              if col_qty < 0:
+                  col_qty = next((i for i, h in enumerate(headers)
+                                  if 'продаж' in str(h).lower() and 'канал' not in str(h).lower()), -1)
               col_promo = find_col(headers, 'промо')
               col_type = find_col(headers, 'тип', 'заказ')
               col_plat = find_col(headers, 'платформ')
@@ -166,19 +169,20 @@ jobs:
                       p = by_platform.setdefault(lbl, {'revenue': 0.0, 'sales': 0.0, 'promo': 0.0})
                       p['revenue'] += rev or 0; p['sales'] += qty or 0; p['promo'] += promo or 0
 
-              if grand is None:
-                  grand = {
-                      'revenue': sum(v['revenue'] for v in by_platform.values()) or None,
-                      'sales': sum(v['sales'] for v in by_platform.values()) or None,
-                      'promo': sum(v['promo'] for v in by_platform.values()) or None,
-                  }
+              def pick(field):
+                  # prefer the grand-total "ИТОГО" cell; if it is empty, fall back to the
+                  # sum across platform rows (sheets often leave sales/promo blank in ИТОГО)
+                  if grand is not None and grand.get(field) is not None:
+                      return grand.get(field)
+                  s = sum((v.get(field) or 0) for v in by_platform.values())
+                  return s if s else None
 
               days.append({
                   'sheet': ws.title,
                   'date': parse_sheet_date(ws.title),
-                  'revenue': grand.get('revenue'),
-                  'sales': grand.get('sales'),
-                  'promo': grand.get('promo'),
+                  'revenue': pick('revenue'),
+                  'sales': pick('sales'),
+                  'promo': pick('promo'),
                   'by_type': by_type,
                   'by_platform': by_platform,
               })
