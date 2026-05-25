@@ -1,0 +1,151 @@
+name: update-dashboard-data-4
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-data-4.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build dashboard4 JSON (dates in columns, "Итого за день:" row)
+        env:
+          GOOGLE_SHEET_ID_4: ${{ vars.GOOGLE_SHEET_ID_4 }}
+          GOOGLE_SHEET_GID_4: ${{ vars.GOOGLE_SHEET_GID_4 }}
+        run: |
+          python - <<'PY'
+          import os, csv, json, re, urllib.request
+          from io import StringIO
+          from datetime import datetime, UTC
+
+          sheet_id = os.environ.get('GOOGLE_SHEET_ID_4') or '1CpbVwXbghwj0YZmPKdcVu8s6owvkGfhxHWIYvc9A8BI'
+          gid = os.environ.get('GOOGLE_SHEET_GID_4') or '742078980'
+          url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}'
+          text = urllib.request.urlopen(url, timeout=90).read().decode('utf-8')
+          rows = list(csv.reader(StringIO(text)))
+
+          MONTHS = {
+              'янв':1,'фев':2,'мар':3,'апр':4,'май':5,'мая':5,'июн':6,'июл':7,
+              'авг':8,'сен':9,'окт':10,'ноя':11,'дек':12,
+              'jan':1,'feb':2,'mar':3,'apr':4,'may':5,'jun':6,'jul':7,'aug':8,'sep':9,'oct':10,'nov':11,'dec':12,
+          }
+          DEFAULT_YEAR = 2026
+
+          def strict_date(v):
+              # Only real date formats (separators or month names). Returns ISO or None.
+              if v is None: return None
+              s = str(v).strip()
+              if not s: return None
+              m = re.match(r'^(\d{4})-(\d{1,2})-(\d{1,2})', s)
+              if m:
+                  y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+              else:
+                  m = re.match(r'^(\d{1,2})[.\/](\d{1,2})(?:[.\/](\d{2,4}))?$', s)
+                  if m:
+                      d, mo = int(m.group(1)), int(m.group(2))
+                      y = int(m.group(3)) if m.group(3) else DEFAULT_YEAR
+                      if y < 100: y += 2000
+                  else:
+                      m = re.match(r'^(\d{1,2})\s*([A-Za-zА-Яа-яёЁ]{3,})\.?\s*(\d{4})?$', s)
+                      if not m: return None
+                      d = int(m.group(1)); mo = MONTHS.get(m.group(2).lower()[:3]);
+                      y = int(m.group(3)) if m.group(3) else DEFAULT_YEAR
+                      if not mo: return None
+              try:
+                  if 1 <= mo <= 12 and 1 <= d <= 31:
+                      return f'{y:04d}-{mo:02d}-{d:02d}'
+              except Exception:
+                  pass
+              return None
+
+          def num(v):
+              if v is None: return None
+              if isinstance(v, (int, float)): return float(v)
+              s = str(v).strip()
+              if not s: return None
+              s = s.replace('\xa0', '').replace(' ', '').replace('₽', '').replace('руб.', '').replace('руб', '').replace('$', '')
+              if s.count(',') == 1 and s.count('.') == 0:
+                  s = s.replace(',', '.')
+              else:
+                  s = s.replace(',', '')
+              try:
+                  return float(s)
+              except ValueError:
+                  return None
+
+          def norm(s):
+              return re.sub(r'\s+', ' ', str(s or '')).strip().lower().rstrip(':').strip()
+
+          # locate the "Итого за день" total row(s)
+          total_rows = [i for i, r in enumerate(rows) if any(norm(c) == 'итого за день' for c in r)]
+          total_idx = total_rows[0] if total_rows else -1
+
+          # locate the date header row = row with the most strict-date cells
+          date_idx, best = -1, 0
+          for i, r in enumerate(rows):
+              cnt = sum(1 for c in r if strict_date(c))
+              if cnt > best:
+                  best, date_idx = cnt, i
+
+          days = []
+          if total_idx >= 0 and date_idx >= 0:
+              drow, trow = rows[date_idx], rows[total_idx]
+              for j in range(len(drow)):
+                  d = strict_date(drow[j])
+                  if not d:
+                      continue
+                  v = num(trow[j]) if j < len(trow) else None
+                  if v is None:
+                      continue
+                  days.append({'date': d, 'revenue': v})
+
+          # dedupe by date (keep last), then sort
+          by_date = {}
+          for rec in days:
+              by_date[rec['date']] = rec['revenue']
+          days = [{'date': k, 'revenue': v} for k, v in by_date.items()]
+          days.sort(key=lambda r: r['date'])
+
+          payload = {
+              'generated_at': datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%SZ'),
+              'source': url,
+              'sheet_view': f'https://docs.google.com/spreadsheets/d/{sheet_id}/edit?gid={gid}',
+              'day_count': len(days),
+              'date_row_index': date_idx,
+              'total_row_index': total_idx,
+              'total_rows_found': len(total_rows),
+              'days': days,
+          }
+          os.makedirs('data', exist_ok=True)
+          with open('data/dashboard4.json', 'w', encoding='utf-8') as f:
+              json.dump(payload, f, ensure_ascii=False, indent=2)
+          print(f'Wrote {len(days)} days. date_row={date_idx}, total_row={total_idx}, total_rows_found={len(total_rows)}')
+          PY
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dashboard4.json
+          if git diff --cached --quiet -- data/dashboard4.json; then
+            echo "No changes in dashboard4.json"
+            exit 0
+          fi
+          git commit -m "chore: update dashboard4 data"
+          git push
