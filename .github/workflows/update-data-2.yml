@@ -25,71 +25,184 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Build dashboard2 JSON
+      - name: Install deps
+        run: pip install openpyxl
+
+      - name: Build dashboard2 JSON (one tab = one day)
         env:
-          GOOGLE_SHEET_CSV_URL_2: ${{ vars.GOOGLE_SHEET_CSV_URL_2 }}
+          GOOGLE_SHEET_ID_2: ${{ vars.GOOGLE_SHEET_ID_2 }}
         run: |
           python - <<'PY'
-          import os, csv, json, re, urllib.request
-          from io import StringIO
+          import os, io, json, re, urllib.request
           from datetime import datetime, UTC
+          from openpyxl import load_workbook
 
-          default_url = 'https://docs.google.com/spreadsheets/d/1GCG1CLIxp_PIAPfQKmhpwyoXoCWhZkIr5NAqMx239OE/export?format=csv&gid=1903663848'
-          url = os.environ.get('GOOGLE_SHEET_CSV_URL_2') or default_url
-          text = urllib.request.urlopen(url, timeout=30).read().decode('utf-8')
-          rows = list(csv.reader(StringIO(text)))
+          sheet_id = os.environ.get('GOOGLE_SHEET_ID_2') or '1GCG1CLIxp_PIAPfQKmhpwyoXoCWhZkIr5NAqMx239OE'
+          url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=xlsx'
+          raw = urllib.request.urlopen(url, timeout=90).read()
+          wb = load_workbook(io.BytesIO(raw), data_only=True, read_only=True)
 
-          # Heuristic: header row = the one with the most non-empty cells in the first 30 rows.
-          best_i, best_count = 0, 0
-          for i, r in enumerate(rows[:30]):
-              c = sum(1 for x in r if str(x).strip())
-              if c > best_count:
-                  best_count, best_i = c, i
-          header_idx = best_i
+          MONTHS = {
+              'янв':1,'фев':2,'мар':3,'апр':4,'май':5,'мая':5,'июн':6,'июл':7,
+              'авг':8,'сен':9,'окт':10,'ноя':11,'дек':12,
+              'jan':1,'feb':2,'mar':3,'apr':4,'may':5,'jun':6,'jul':7,'aug':8,'sep':9,'oct':10,'nov':11,'dec':12,
+          }
+          THIS_YEAR = datetime.now(UTC).year
 
-          raw_headers = rows[header_idx]
-          headers = [re.sub(r'\s+', ' ', str(h).replace('\n', ' ')).strip() for h in raw_headers]
-          # trim trailing empty headers
-          while headers and headers[-1] == '':
-              headers.pop()
+          def is_month_summary(name):
+              # Tabs like "2026.05" / "05.2026" / "Май 2026" are monthly roll-ups — skip them.
+              s = str(name).strip()
+              if re.fullmatch(r'\d{4}[.\-/]\d{1,2}', s): return True
+              if re.fullmatch(r'\d{1,2}[.\-/]\d{4}', s): return True
+              if re.fullmatch(r'[А-Яа-яЁёA-Za-z]+\s+\d{4}', s): return True
+              return False
 
-          # de-duplicate empty/duplicate headers so JSON keys stay unique
-          seen = {}
-          final_headers = []
-          for i, h in enumerate(headers):
-              base = h if h else f'col_{i+1}'
-              key = base
-              n = 1
-              while key in seen:
-                  n += 1
-                  key = f'{base} ({n})'
-              seen[key] = True
-              final_headers.append(key)
-          headers = final_headers
+          def parse_sheet_date(name):
+              s = str(name).strip()
+              m = re.search(r'(\d{4})-(\d{1,2})-(\d{1,2})', s)
+              if m:
+                  return f'{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}'
+              m = re.search(r'(\d{1,2})[.\/](\d{1,2})(?:[.\/](\d{2,4}))?', s)
+              if m:
+                  d, mo = int(m.group(1)), int(m.group(2))
+                  y = m.group(3)
+                  y = int(y) if y else THIS_YEAR
+                  if y < 100: y += 2000
+                  if 1 <= mo <= 12 and 1 <= d <= 31:
+                      return f'{y:04d}-{mo:02d}-{d:02d}'
+              m = re.search(r'(\d{1,2})\s*([A-Za-zА-Яа-яёЁ]+)\.?\s*(\d{4})?', s)
+              if m:
+                  d = int(m.group(1))
+                  mon_txt = m.group(2).lower()[:3]
+                  mo = MONTHS.get(mon_txt)
+                  y = int(m.group(3)) if m.group(3) else THIS_YEAR
+                  if mo:
+                      return f'{y:04d}-{mo:02d}-{d:02d}'
+              return None
 
-          data_rows = [r for r in rows[header_idx+1:] if any(str(x).strip() for x in r)]
+          def num(x):
+              if x is None: return None
+              if isinstance(x, (int, float)): return float(x)
+              s = str(x).strip()
+              if not s: return None
+              s = s.replace('\xa0', '').replace(' ', '').replace('₽', '').replace('$', '')
+              if s.count(',') == 1 and s.count('.') == 0:
+                  s = s.replace(',', '.')
+              else:
+                  s = s.replace(',', '')
+              try:
+                  return float(s)
+              except ValueError:
+                  return None
 
-          records = []
-          for r in data_rows:
-              obj = {}
+          def find_col(headers, *keywords):
               for i, h in enumerate(headers):
-                  v = r[i] if i < len(r) else ''
-                  obj[h] = v
-              records.append(obj)
+                  hl = str(h or '').lower()
+                  if all(k in hl for k in keywords):
+                      return i
+              return -1
+
+          days = []
+          ref_headers = []
+          skipped = []
+          for ws in wb.worksheets:
+              if is_month_summary(ws.title):
+                  skipped.append(ws.title)
+                  continue
+              rows = [list(r) for r in ws.iter_rows(values_only=True)]
+              if not rows:
+                  continue
+              header_idx = -1
+              for i, r in enumerate(rows[:20]):
+                  joined = ' '.join(str(x or '').lower() for x in r)
+                  if 'выручка' in joined:
+                      header_idx = i
+                      break
+              if header_idx < 0:
+                  continue
+              headers = [re.sub(r'\s+', ' ', str(x or '').replace('\n', ' ')).strip() for x in rows[header_idx]]
+              if not ref_headers:
+                  ref_headers = headers
+              col_rev = find_col(headers, 'выручка')
+              col_qty = find_col(headers, 'продаж')
+              col_promo = find_col(headers, 'промо')
+              col_type = find_col(headers, 'тип', 'заказ')
+              col_plat = find_col(headers, 'платформ')
+
+              def cell(r, idx):
+                  return r[idx] if 0 <= idx < len(r) else None
+
+              def label_of(r):
+                  # the textual marker for a row: platform col, else first non-empty text cell
+                  v = cell(r, col_plat)
+                  if v and str(v).strip():
+                      return str(v).strip()
+                  for c in r:
+                      if isinstance(c, str) and c.strip():
+                          return c.strip()
+                  return ''
+
+              grand = None
+              by_type = {}
+              by_platform = {}
+              for r in rows[header_idx + 1:]:
+                  lbl = label_of(r)
+                  low = lbl.lower()
+                  rev = num(cell(r, col_rev))
+                  qty = num(cell(r, col_qty))
+                  promo = num(cell(r, col_promo))
+                  if low == 'итого':
+                      grand = {'revenue': rev, 'sales': qty, 'promo': promo}
+                      continue
+                  if low.startswith('итого'):
+                      continue  # subtotal row (e.g. "ИТОГО Автопродление") — skip, we aggregate from detail
+                  if rev is None and qty is None:
+                      continue
+                  otype = cell(r, col_type)
+                  otype = str(otype).strip() if otype is not None else ''
+                  if otype:
+                      t = by_type.setdefault(otype, {'revenue': 0.0, 'sales': 0.0, 'promo': 0.0})
+                      t['revenue'] += rev or 0; t['sales'] += qty or 0; t['promo'] += promo or 0
+                  if lbl:
+                      p = by_platform.setdefault(lbl, {'revenue': 0.0, 'sales': 0.0, 'promo': 0.0})
+                      p['revenue'] += rev or 0; p['sales'] += qty or 0; p['promo'] += promo or 0
+
+              if grand is None:
+                  grand = {
+                      'revenue': sum(v['revenue'] for v in by_platform.values()) or None,
+                      'sales': sum(v['sales'] for v in by_platform.values()) or None,
+                      'promo': sum(v['promo'] for v in by_platform.values()) or None,
+                  }
+
+              days.append({
+                  'sheet': ws.title,
+                  'date': parse_sheet_date(ws.title),
+                  'revenue': grand.get('revenue'),
+                  'sales': grand.get('sales'),
+                  'promo': grand.get('promo'),
+                  'by_type': by_type,
+                  'by_platform': by_platform,
+              })
+
+          for i, d in enumerate(days):
+              d['_idx'] = i
+          days.sort(key=lambda d: (d['date'] is None, d['date'] or '', d['_idx']))
+          for d in days:
+              d.pop('_idx', None)
 
           payload = {
               'generated_at': datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%SZ'),
               'source': url,
-              'row_count': len(records),
-              'headers_count': len(headers),
-              'headers': headers,
-              'records': records,
+              'sheet_count': len(days),
+              'skipped_month_tabs': skipped,
+              'headers': ref_headers,
+              'days': days,
           }
 
           os.makedirs('data', exist_ok=True)
           with open('data/dashboard2.json', 'w', encoding='utf-8') as f:
               json.dump(payload, f, ensure_ascii=False, indent=2)
-          print(f'Wrote data/dashboard2.json with {len(records)} rows / {len(headers)} columns')
+          print(f'Wrote {len(days)} day-tabs to data/dashboard2.json (skipped {len(skipped)} monthly tabs: {skipped})')
           PY
 
       - name: Commit and push changes
