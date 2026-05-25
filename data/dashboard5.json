@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-05-25T13:33:19Z",
+  "currency": "USD",
+  "source": "https://docs.google.com/spreadsheets/d/1WG-XENqaWzjAv7L-B9lWO9n5tRRvpDzOphSZoTFsrxQ/export?format=csv&gid=1716802263",
+  "sheet_view": "https://docs.google.com/spreadsheets/d/1WG-XENqaWzjAv7L-B9lWO9n5tRRvpDzOphSZoTFsrxQ/edit?gid=1716802263",
+  "current_month": "2026-05",
+  "day_count": 31,
+  "amazon_row_index": 1,
+  "total_row_index": 16,
+  "days": [
+    {
+      "date": "2026-05-01",
+      "revenue": 2326.33
+    },
+    {
+      "date": "2026-05-02",
+      "revenue": 1637.43
+    },
+    {
+      "date": "2026-05-03",
+      "revenue": 1987.05
+    },
+    {
+      "date": "2026-05-04",
+      "revenue": 2138.04
+    },
+    {
+      "date": "2026-05-05",
+      "revenue": 1632.94
+    },
+    {
+      "date": "2026-05-06",
+      "revenue": 1764.89
+    },
+    {
+      "date": "2026-05-07",
+      "revenue": 1730.35
+    },
+    {
+      "date": "2026-05-08",
+      "revenue": 2280.34
+    },
+    {
+      "date": "2026-05-09",
+      "revenue": 1471.1
+    },
+    {
+      "date": "2026-05-10",
+      "revenue": 1550.46
+    },
+    {
+      "date": "2026-05-11",
+      "revenue": 1044.83
+    },
+    {
+      "date": "2026-05-12",
+      "revenue": 1485.7
+    },
+    {
+      "date": "2026-05-13",
+      "revenue": 2230.53
+    },
+    {
+      "date": "2026-05-14",
+      "revenue": 1508.19
+    },
+    {
+      "date": "2026-05-15",
+      "revenue": 1311.46
+    },
+    {
+      "date": "2026-05-16",
+      "revenue": 1388.4
+    },
+    {
+      "date": "2026-05-17",
+      "revenue": 2079.39
+    },
+    {
+      "date": "2026-05-18",
+      "revenue": 1256.79
+    },
+    {
+      "date": "2026-05-19",
+      "revenue": 1502.28
+    },
+    {
+      "date": "2026-05-20",
+      "revenue": 3461.98
+    },
+    {
+      "date": "2026-05-21",
+      "revenue": 4431.46
+    },
+    {
+      "date": "2026-05-22",
+      "revenue": 2715.49
+    },
+    {
+      "date": "2026-05-23",
+      "revenue": 1871.73
+    },
+    {
+      "date": "2026-05-24",
+      "revenue": 2453.64
+    },
+    {
+      "date": "2026-05-25",
+      "revenue": 1683.09
+    },
+    {
+      "date": "2026-05-26",
+      "revenue": 1469.0
+    },
+    {
+      "date": "2026-05-27",
+      "revenue": 3074.82
+    },
+    {
+      "date": "2026-05-28",
+      "revenue": 2000.59
+    },
+    {
+      "date": "2026-05-29",
+      "revenue": 2069.12
+    },
+    {
+      "date": "2026-05-30",
+      "revenue": 2607.19
+    },
+    {
+      "date": "2026-05-31",
+      "revenue": 1897.54
+    }
+  ]
+}
