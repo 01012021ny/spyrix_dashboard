@@ -206,12 +206,12 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          if git diff --quiet -- data/dashboard2.json; then
-            echo "No changes in dashboard2.json"
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/dashboard2.json
+          if git diff --cached --quiet -- data/dashboard2.json; then
+            echo "No changes in dashboard2.json"
+            exit 0
+          fi
           git commit -m "chore: update dashboard2 data"
           git push
