@@ -87,17 +87,17 @@
   <div class="grid-kpi" id="kpiGrid"></div>
 
   <section class="card panel big-chart">
-    <h2>Выручка нарастающим итогом, $</h2>
-    <p>Накопительная сумма «итого» по дням текущего месяца.</p>
-    <div class="chart-box big" id="chartCumulative"></div>
-    <div class="legend"><span><i class="dot" style="background:var(--cyan)"></i>Накопительно за месяц</span></div>
+    <h2>Ежедневная выручка, $</h2>
+    <p>«Итого» по каждому дню текущего месяца. Линия — предыдущий такой же период.</p>
+    <div class="chart-box big" id="chartRevenue"></div>
+    <div class="legend"><span><i class="dot" style="background:var(--green)"></i>Текущий период</span><span><i class="dot" style="background:var(--orange)"></i>Предыдущий период</span></div>
   </section>
 
   <div class="grid-charts">
     <section class="card panel">
-      <h2>Ежедневная выручка, $</h2><p>«Итого» по каждому дню. Линия — предыдущий такой же период.</p>
-      <div class="chart-box" id="chartRevenue"></div>
-      <div class="legend"><span><i class="dot" style="background:var(--green)"></i>Текущий период</span><span><i class="dot" style="background:var(--orange)"></i>Предыдущий период</span></div>
+      <h2>Выручка нарастающим итогом, $</h2><p>Накопительная сумма «итого» по дням периода.</p>
+      <div class="chart-box" id="chartCumulative"></div>
+      <div class="legend"><span><i class="dot" style="background:var(--cyan)"></i>Накопительно</span></div>
     </section>
     <section class="card panel">
       <h2>Скользящее среднее (7 дней), $</h2><p>Сглаженный тренд дневной выручки.</p>
