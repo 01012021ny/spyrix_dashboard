@@ -1,0 +1,4391 @@
+{
+  "generated_at": "2026-05-25T12:55:35Z",
+  "source": "https://docs.google.com/spreadsheets/d/1GCG1CLIxp_PIAPfQKmhpwyoXoCWhZkIr5NAqMx239OE/export?format=xlsx",
+  "sheet_count": 113,
+  "skipped_month_tabs": [
+    "2026.05",
+    "2026.04",
+    "2026.03",
+    "2026.02",
+    "2026.01",
+    "2025.12",
+    "2025.11",
+    "2025.10",
+    "2025.09",
+    "2025.08",
+    "2025.07",
+    "2025.06",
+    "2025.05",
+    "2025.04",
+    "2025.03",
+    "2025.02",
+    "2025.01",
+    "2024.12",
+    "2024.11",
+    "2024.10",
+    "2024.09",
+    "2024.08"
+  ],
+  "headers": [
+    "Дата",
+    "Канал продаж",
+    "Подписка",
+    "Платформа",
+    "Выручка, руб.",
+    "Продажи, шт.",
+    "В т.ч. промо, шт",
+    "Тип заказа",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "days": [
+    {
+      "sheet": "2026-02-01",
+      "date": "2026-02-01",
+      "revenue": 14819.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 9611.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5208.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 7461.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1471.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 5887.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-02",
+      "date": "2026-02-02",
+      "revenue": 21516.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 9744.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 11772.0,
+          "sales": 0.0,
+          "promo": 10.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 10828.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "macOS": {
+          "revenue": 4410.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6278.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-03",
+      "date": "2026-02-03",
+      "revenue": 28561.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 21315.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7246.0,
+          "sales": 0.0,
+          "promo": 11.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 16680.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 5391.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 6490.0,
+          "sales": 0.0,
+          "promo": 10.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-04",
+      "date": "2026-02-04",
+      "revenue": 22147.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18152.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3995.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 11701.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 4410.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 5887.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-05",
+      "date": "2026-02-05",
+      "revenue": 28096.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14724.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 13372.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 8800.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8634.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 10662.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-06",
+      "date": "2026-02-06",
+      "revenue": 31269.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 19519.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 11750.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3910.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7164.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 20046.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-07",
+      "date": "2026-02-07",
+      "revenue": 25328.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15280.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 10048.0,
+          "sales": 0.0,
+          "promo": 12.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 298.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2931.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 10000.0,
+          "sales": 0.0,
+          "promo": 10.0
+        },
+        "iOS": {
+          "revenue": 12099.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-08",
+      "date": "2026-02-08",
+      "revenue": 19682.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14105.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5577.0,
+          "sales": 0.0,
+          "promo": 9.0
+        }
+      },
+      "by_platform": {
+        "Windows": {
+          "revenue": 5679.0,
+          "sales": 0.0,
+          "promo": 9.0
+        },
+        "iOS": {
+          "revenue": 11563.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2440.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-09",
+      "date": "2026-02-09",
+      "revenue": 30138.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13906.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 16232.0,
+          "sales": 0.0,
+          "promo": 13.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 20176.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2932.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 6881.0,
+          "sales": 0.0,
+          "promo": 11.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-10",
+      "date": "2026-02-10",
+      "revenue": 26895.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17468.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 9427.0,
+          "sales": 0.0,
+          "promo": 14.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 5391.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 9582.0,
+          "sales": 0.0,
+          "promo": 12.0
+        },
+        "iOS": {
+          "revenue": 11773.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-11",
+      "date": "2026-02-11",
+      "revenue": 29115.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 21190.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7925.0,
+          "sales": 0.0,
+          "promo": 10.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 298.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 5381.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 9818.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "iOS": {
+          "revenue": 13618.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-12",
+      "date": "2026-02-12",
+      "revenue": 19978.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15141.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4837.0,
+          "sales": 0.0,
+          "promo": 13.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 5870.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7451.0,
+          "sales": 0.0,
+          "promo": 11.0
+        },
+        "iOS": {
+          "revenue": 6508.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-13",
+      "date": "2026-02-13",
+      "revenue": 30735.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13765.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 16970.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3421.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 7654.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 19660.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-14",
+      "date": "2026-02-14",
+      "revenue": 25081.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18122.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6959.0,
+          "sales": 0.0,
+          "promo": 11.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 5380.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9011.0,
+          "sales": 0.0,
+          "promo": 11.0
+        },
+        "iOS": {
+          "revenue": 10690.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-15",
+      "date": "2026-02-15",
+      "revenue": 22799.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15962.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6837.0,
+          "sales": 0.0,
+          "promo": 10.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 4890.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7240.0,
+          "sales": 0.0,
+          "promo": 10.0
+        },
+        "iOS": {
+          "revenue": 10669.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-16",
+      "date": "2026-02-16",
+      "revenue": 25406.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 19403.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6003.0,
+          "sales": 0.0,
+          "promo": 9.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 10628.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "macOS": {
+          "revenue": 6840.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7448.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-17",
+      "date": "2026-02-17",
+      "revenue": 27779.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 23151.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4628.0,
+          "sales": 0.0,
+          "promo": 9.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 7340.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7839.0,
+          "sales": 0.0,
+          "promo": 9.0
+        },
+        "iOS": {
+          "revenue": 12600.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-18",
+      "date": "2026-02-18",
+      "revenue": 28472.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 16306.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 12166.0,
+          "sales": 0.0,
+          "promo": 11.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 14372.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "macOS": {
+          "revenue": 7822.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 6278.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-19",
+      "date": "2026-02-19",
+      "revenue": 26801.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 19924.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6877.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 11013.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 8321.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 7467.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-20",
+      "date": "2026-02-20",
+      "revenue": 23590.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 16913.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6677.0,
+          "sales": 0.0,
+          "promo": 9.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 298.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1960.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6489.0,
+          "sales": 0.0,
+          "promo": 9.0
+        },
+        "iOS": {
+          "revenue": 14843.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-21",
+      "date": "2026-02-21",
+      "revenue": 36059.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 20674.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 15385.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 980.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 8310.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 11408.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "iOS": {
+          "revenue": 15361.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-22",
+      "date": "2026-02-22",
+      "revenue": 21794.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13743.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8051.0,
+          "sales": 0.0,
+          "promo": 12.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3912.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 10210.0,
+          "sales": 0.0,
+          "promo": 10.0
+        },
+        "iOS": {
+          "revenue": 7182.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-23",
+      "date": "2026-02-23",
+      "revenue": 22308.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18186.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4122.0,
+          "sales": 0.0,
+          "promo": 15.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 10835.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 298.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2940.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8235.0,
+          "sales": 0.0,
+          "promo": 15.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-24",
+      "date": "2026-02-24",
+      "revenue": 33204.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 22133.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 11071.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 1129.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 7822.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "iOS": {
+          "revenue": 17408.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6845.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-25",
+      "date": "2026-02-25",
+      "revenue": 27228.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 20266.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6962.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3920.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 13144.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 10164.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-26",
+      "date": "2026-02-26",
+      "revenue": 31682.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15216.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 16466.0,
+          "sales": 0.0,
+          "promo": 11.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 298.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 5380.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 11489.0,
+          "sales": 0.0,
+          "promo": 9.0
+        },
+        "iOS": {
+          "revenue": 14515.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-27",
+      "date": "2026-02-27",
+      "revenue": 16744.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 11192.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5552.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3040.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6086.0,
+          "sales": 0.0,
+          "promo": 6.0
+        },
+        "iOS": {
+          "revenue": 7128.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-02-28",
+      "date": "2026-02-28",
+      "revenue": 23145.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 11431.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 11714.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3920.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8827.0,
+          "sales": 0.0,
+          "promo": 7.0
+        },
+        "iOS": {
+          "revenue": 10249.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-01",
+      "date": "2026-03-01",
+      "revenue": 24293.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 16669.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7624.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 5380.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8036.0,
+          "sales": 0.0,
+          "promo": 6.0
+        },
+        "iOS": {
+          "revenue": 10877.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-02",
+      "date": "2026-03-02",
+      "revenue": 24217.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15843.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8374.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 15680.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "macOS": {
+          "revenue": 2450.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6087.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-03",
+      "date": "2026-03-03",
+      "revenue": 23915.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13398.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 10517.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 14043.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3420.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6452.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-04",
+      "date": "2026-03-04",
+      "revenue": 19514.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15980.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3534.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 7548.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3920.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8046.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-05",
+      "date": "2026-03-05",
+      "revenue": 25310.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17239.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8071.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 639.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 4901.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 10884.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 8886.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-06",
+      "date": "2026-03-06",
+      "revenue": 22648.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14648.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8000.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 11634.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 4410.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6455.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-07",
+      "date": "2026-03-07",
+      "revenue": 23300.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 16348.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6952.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 5390.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6275.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 11635.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-08",
+      "date": "2026-03-08",
+      "revenue": 18121.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14967.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3154.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 980.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6275.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 10717.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-09",
+      "date": "2026-03-09",
+      "revenue": 25412.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18504.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6908.0,
+          "sales": 0.0,
+          "promo": 13.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 15281.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1961.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8021.0,
+          "sales": 0.0,
+          "promo": 11.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-10",
+      "date": "2026-03-10",
+      "revenue": 25389.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15541.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 9848.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3420.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 5674.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 16295.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-11",
+      "date": "2026-03-11",
+      "revenue": 21600.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17975.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3625.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 1278.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "iOS": {
+          "revenue": 11405.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1471.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 7446.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-12",
+      "date": "2026-03-12",
+      "revenue": 21416.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15104.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6312.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 4410.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8796.0,
+          "sales": 0.0,
+          "promo": 7.0
+        },
+        "iOS": {
+          "revenue": 7720.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-13",
+      "date": "2026-03-13",
+      "revenue": 22871.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15556.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7315.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3431.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 6275.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 13165.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-14",
+      "date": "2026-03-14",
+      "revenue": 23592.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 19028.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4564.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3920.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9606.0,
+          "sales": 0.0,
+          "promo": 6.0
+        },
+        "iOS": {
+          "revenue": 9917.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-15",
+      "date": "2026-03-15",
+      "revenue": 22249.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15013.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7236.0,
+          "sales": 0.0,
+          "promo": 10.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 11820.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "macOS": {
+          "revenue": 1962.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 8467.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-16",
+      "date": "2026-03-16",
+      "revenue": 43311.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 25963.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 17348.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 25597.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 6841.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 10383.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-17",
+      "date": "2026-03-17",
+      "revenue": 21786.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18664.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3122.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 12883.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2450.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6453.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-18",
+      "date": "2026-03-18",
+      "revenue": 23323.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17542.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5781.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 12199.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Android": {
+          "revenue": 1129.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2941.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 7054.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-19",
+      "date": "2026-03-19",
+      "revenue": 25351.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 21498.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3853.0,
+          "sales": 0.0,
+          "promo": 9.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 5390.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6248.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "iOS": {
+          "revenue": 13564.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-20",
+      "date": "2026-03-20",
+      "revenue": 22122.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14517.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7605.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 14305.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1961.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 5856.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-21",
+      "date": "2026-03-21",
+      "revenue": 18519.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14068.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4451.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 7477.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "macOS": {
+          "revenue": 5381.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 5661.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-22",
+      "date": "2026-03-22",
+      "revenue": 17869.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14138.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3731.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 298.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1960.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 5493.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 10118.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-23",
+      "date": "2026-03-23",
+      "revenue": 26250.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18455.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7795.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 15473.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "macOS": {
+          "revenue": 2941.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 7836.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-24",
+      "date": "2026-03-24",
+      "revenue": 26310.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 21727.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4583.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 2930.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9808.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "iOS": {
+          "revenue": 13572.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-25",
+      "date": "2026-03-25",
+      "revenue": 23448.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 19628.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3820.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3911.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8793.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 10595.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-26",
+      "date": "2026-03-26",
+      "revenue": 20848.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15574.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5274.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 11363.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1470.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8015.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-27",
+      "date": "2026-03-27",
+      "revenue": 27258.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18687.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8571.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 6840.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7625.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 12793.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-28",
+      "date": "2026-03-28",
+      "revenue": 24454.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 16907.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7547.0,
+          "sales": 0.0,
+          "promo": 9.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2941.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 10288.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "iOS": {
+          "revenue": 11076.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-29",
+      "date": "2026-03-29",
+      "revenue": 26848.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15796.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 11052.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 8553.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 9871.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8424.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-30",
+      "date": "2026-03-30",
+      "revenue": 21530.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17620.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3910.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3430.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 3516.0,
+          "sales": 0.0,
+          "promo": 6.0
+        },
+        "iOS": {
+          "revenue": 14435.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-03-31",
+      "date": "2026-03-31",
+      "revenue": 26835.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17965.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8870.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3421.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8824.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 14441.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-01",
+      "date": "2026-04-01",
+      "revenue": 19350.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 12381.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6969.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 7686.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "macOS": {
+          "revenue": 5391.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 6273.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-02",
+      "date": "2026-04-02",
+      "revenue": 22297.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17494.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4803.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 4900.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6664.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 10243.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-03",
+      "date": "2026-04-03",
+      "revenue": 16755.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15103.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 1652.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 6851.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 4293.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 5611.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-04",
+      "date": "2026-04-04",
+      "revenue": 24409.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 19568.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4841.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 5391.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8044.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 10974.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-05",
+      "date": "2026-04-05",
+      "revenue": 21601.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14074.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7527.0,
+          "sales": 0.0,
+          "promo": 9.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 7002.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 6371.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8228.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-06",
+      "date": "2026-04-06",
+      "revenue": 35469.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 22729.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 12740.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 5390.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 10412.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "iOS": {
+          "revenue": 19667.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-07",
+      "date": "2026-04-07",
+      "revenue": 25809.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14456.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 11353.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1471.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 7264.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 16925.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-08",
+      "date": "2026-04-08",
+      "revenue": 25655.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17487.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8168.0,
+          "sales": 0.0,
+          "promo": 2.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 639.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1960.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9392.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "iOS": {
+          "revenue": 13664.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-09",
+      "date": "2026-04-09",
+      "revenue": 26955.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17670.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 9285.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2933.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "Windows": {
+          "revenue": 5873.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 17659.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-10",
+      "date": "2026-04-10",
+      "revenue": 25941.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 20447.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5494.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "iOS": {
+          "revenue": 12576.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3430.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9786.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-11",
+      "date": "2026-04-11",
+      "revenue": 26809.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17515.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 9294.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3430.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 10207.0,
+          "sales": 0.0,
+          "promo": 7.0
+        },
+        "iOS": {
+          "revenue": 13172.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-12",
+      "date": "2026-04-12",
+      "revenue": 21971.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13691.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8280.0,
+          "sales": 0.0,
+          "promo": 10.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 8976.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "Android": {
+          "revenue": 639.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3921.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8435.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-13",
+      "date": "2026-04-13",
+      "revenue": 30887.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 21487.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 9400.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3910.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9603.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 17225.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-14",
+      "date": "2026-04-14",
+      "revenue": 24541.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13220.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 11321.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 5881.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 7832.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "iOS": {
+          "revenue": 10828.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-15",
+      "date": "2026-04-15",
+      "revenue": 31438.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 22642.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8796.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 17225.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "macOS": {
+          "revenue": 2450.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 11763.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-16",
+      "date": "2026-04-16",
+      "revenue": 28023.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17271.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 10752.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 1960.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9217.0,
+          "sales": 0.0,
+          "promo": 7.0
+        },
+        "iOS": {
+          "revenue": 16846.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-17",
+      "date": "2026-04-17",
+      "revenue": 18991.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13030.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5961.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 2550.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 5493.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 10948.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-18",
+      "date": "2026-04-18",
+      "revenue": 26177.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 21450.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4727.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 5390.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9987.0,
+          "sales": 0.0,
+          "promo": 7.0
+        },
+        "iOS": {
+          "revenue": 10310.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-19",
+      "date": "2026-04-19",
+      "revenue": 23698.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13403.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 10295.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 8792.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 980.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2941.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 10985.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-20",
+      "date": "2026-04-20",
+      "revenue": 22396.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 12494.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 9902.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 12763.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3030.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6113.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-21",
+      "date": "2026-04-21",
+      "revenue": 13726.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 7084.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6642.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 3333.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 9903.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-22",
+      "date": "2026-04-22",
+      "revenue": 48522.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 40331.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8191.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 11731.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Android": {
+          "revenue": 298.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 11733.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 24760.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-23",
+      "date": "2026-04-23",
+      "revenue": 29640.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 21386.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8254.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 4881.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 10795.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 13964.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-24",
+      "date": "2026-04-24",
+      "revenue": 16994.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 12210.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4784.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 639.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2452.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 5855.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 8048.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-25",
+      "date": "2026-04-25",
+      "revenue": 24568.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13782.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 10786.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 10831.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 980.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 12757.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-26",
+      "date": "2026-04-26",
+      "revenue": 26354.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18558.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7796.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3922.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 14664.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 7768.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-27",
+      "date": "2026-04-27",
+      "revenue": 19039.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13457.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5582.0,
+          "sales": 0.0,
+          "promo": 14.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3912.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 6072.0,
+          "sales": 0.0,
+          "promo": 12.0
+        },
+        "iOS": {
+          "revenue": 8906.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-28",
+      "date": "2026-04-28",
+      "revenue": 22225.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 12622.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 9603.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2941.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8066.0,
+          "sales": 0.0,
+          "promo": 6.0
+        },
+        "iOS": {
+          "revenue": 11069.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-29",
+      "date": "2026-04-29",
+      "revenue": 24667.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 20922.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3745.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 16812.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3430.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 3935.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-04-30",
+      "date": "2026-04-30",
+      "revenue": 23010.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14755.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8255.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 12254.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1960.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8647.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-01",
+      "date": "2026-05-01",
+      "revenue": 21288.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13108.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8180.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 4890.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7443.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 8806.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-02",
+      "date": "2026-05-02",
+      "revenue": 20374.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 16282.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4092.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 2450.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7434.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 10490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-03",
+      "date": "2026-05-03",
+      "revenue": 15704.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 10991.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4713.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 4410.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 4325.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 6969.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-04",
+      "date": "2026-05-04",
+      "revenue": 29085.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 16373.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 12712.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 10770.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8225.0,
+          "sales": 0.0,
+          "promo": 6.0
+        },
+        "iOS": {
+          "revenue": 10090.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-05",
+      "date": "2026-05-05",
+      "revenue": 23918.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18633.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5285.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 10303.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 7342.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 6273.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-06",
+      "date": "2026-05-06",
+      "revenue": 32691.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 27393.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5298.0,
+          "sales": 0.0,
+          "promo": 9.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 4900.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 8829.0,
+          "sales": 0.0,
+          "promo": 9.0
+        },
+        "iOS": {
+          "revenue": 18962.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-07",
+      "date": "2026-05-07",
+      "revenue": 19832.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 10770.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 9062.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1960.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6455.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 11268.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-08",
+      "date": "2026-05-08",
+      "revenue": 26423.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 20575.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5848.0,
+          "sales": 0.0,
+          "promo": 11.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 16593.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 9191.0,
+          "sales": 0.0,
+          "promo": 11.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-09",
+      "date": "2026-05-09",
+      "revenue": 21940.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 17438.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4502.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 2440.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7265.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 12235.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-10",
+      "date": "2026-05-10",
+      "revenue": 24721.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 19395.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5326.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 149.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "iOS": {
+          "revenue": 8855.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3920.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 11797.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-11",
+      "date": "2026-05-11",
+      "revenue": 23494.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 16160.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7334.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 4400.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 10567.0,
+          "sales": 0.0,
+          "promo": 7.0
+        },
+        "iOS": {
+          "revenue": 8527.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-12",
+      "date": "2026-05-12",
+      "revenue": 18629.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 12185.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6444.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3430.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7238.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "iOS": {
+          "revenue": 7961.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-13",
+      "date": "2026-05-13",
+      "revenue": 31302.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 24284.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7018.0,
+          "sales": 0.0,
+          "promo": 10.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3912.0,
+          "sales": 0.0,
+          "promo": 2.0
+        },
+        "Windows": {
+          "revenue": 6658.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "iOS": {
+          "revenue": 20732.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-14",
+      "date": "2026-05-14",
+      "revenue": 25815.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 19083.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6732.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3920.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7234.0,
+          "sales": 0.0,
+          "promo": 4.0
+        },
+        "iOS": {
+          "revenue": 14661.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-15",
+      "date": "2026-05-15",
+      "revenue": 36031.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 21261.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 14770.0,
+          "sales": 0.0,
+          "promo": 3.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 2930.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 10773.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 21838.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-16",
+      "date": "2026-05-16",
+      "revenue": 26147.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18497.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 7650.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 17913.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1960.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6274.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-17",
+      "date": "2026-05-17",
+      "revenue": 18224.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14809.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3415.0,
+          "sales": 0.0,
+          "promo": 6.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 5000.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 3906.0,
+          "sales": 0.0,
+          "promo": 6.0
+        },
+        "iOS": {
+          "revenue": 9318.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-18",
+      "date": "2026-05-18",
+      "revenue": 22891.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14012.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8879.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 3910.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6655.0,
+          "sales": 0.0,
+          "promo": 5.0
+        },
+        "iOS": {
+          "revenue": 12326.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-19",
+      "date": "2026-05-19",
+      "revenue": 27159.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 13190.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 13969.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 15104.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 5390.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 6665.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-20",
+      "date": "2026-05-20",
+      "revenue": 31305.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 24632.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 6673.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 24040.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 1570.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 5695.0,
+          "sales": 0.0,
+          "promo": 5.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-21",
+      "date": "2026-05-21",
+      "revenue": 18490.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 6014.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 12476.0,
+          "sales": 0.0,
+          "promo": 4.0
+        }
+      },
+      "by_platform": {
+        "Windows": {
+          "revenue": 4503.0,
+          "sales": 0.0,
+          "promo": 3.0
+        },
+        "iOS": {
+          "revenue": 11056.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Android": {
+          "revenue": 490.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 2441.0,
+          "sales": 0.0,
+          "promo": 1.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-22",
+      "date": "2026-05-22",
+      "revenue": 38881.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 33427.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 5454.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "Android": {
+          "revenue": 298.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 7350.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 10958.0,
+          "sales": 0.0,
+          "promo": 8.0
+        },
+        "iOS": {
+          "revenue": 20275.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-23",
+      "date": "2026-05-23",
+      "revenue": 18525.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 14732.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 3793.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 1961.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8037.0,
+          "sales": 0.0,
+          "promo": 7.0
+        },
+        "iOS": {
+          "revenue": 8527.0,
+          "sales": 0.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-24",
+      "date": "2026-05-24",
+      "revenue": 19774.0,
+      "sales": null,
+      "promo": null,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 15478.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 4296.0,
+          "sales": 0.0,
+          "promo": 8.0
+        }
+      },
+      "by_platform": {
+        "iOS": {
+          "revenue": 7846.0,
+          "sales": 0.0,
+          "promo": 0.0
+        },
+        "macOS": {
+          "revenue": 3911.0,
+          "sales": 0.0,
+          "promo": 1.0
+        },
+        "Windows": {
+          "revenue": 8017.0,
+          "sales": 0.0,
+          "promo": 7.0
+        }
+      }
+    }
+  ]
+}
