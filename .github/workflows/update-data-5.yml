@@ -137,6 +137,23 @@ jobs:
               by_date[rec['date']] = rec['revenue']
           days = [{'date': k, 'revenue': v} for k, v in sorted(by_date.items())]
 
+          # drop days that haven't happened yet (future relative to today, UTC)
+          today = now.strftime('%Y-%m-%d')
+          days = [d for d in days if d['date'] <= today]
+
+          def first_label(r):
+              for c in r:
+                  if str(c or '').strip():
+                      return str(c).strip()
+              return ''
+
+          debug = {
+              'row_labels': [{'i': i, 'label': first_label(r)[:45], 'ncols': len(r)} for i, r in enumerate(rows)],
+              'itogo_candidates': [{'i': i, 'label': first_label(rows[i])[:45]} for i in range(len(rows)) if any('итого' in norm(c) for c in rows[i])],
+              'amazon_row_raw': [str(c) for c in rows[date_idx]] if date_idx >= 0 else None,
+              'total_row_raw': [str(c) for c in rows[total_idx]] if total_idx >= 0 else None,
+          }
+
           payload = {
               'generated_at': now.strftime('%Y-%m-%dT%H:%M:%SZ'),
               'currency': 'USD',
@@ -146,6 +163,7 @@ jobs:
               'day_count': len(days),
               'amazon_row_index': date_idx,
               'total_row_index': total_idx,
+              '_debug': debug,
               'days': days,
           }
           os.makedirs('data', exist_ok=True)
