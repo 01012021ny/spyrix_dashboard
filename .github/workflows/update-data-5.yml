@@ -100,25 +100,34 @@ jobs:
           def norm(s):
               return re.sub(r'\s+', ' ', str(s or '')).strip().lower().rstrip(':').strip()
 
-          # AMAZON row = the row that has a cell equal to "amazon"; its other cells are the dates
-          date_idx = -1
-          for i, r in enumerate(rows):
-              if any(norm(c) == 'amazon' for c in r):
-                  date_idx = i
-                  break
+          def first_cell_norm(r):
+              for c in r:
+                  s = norm(c)
+                  if s:
+                      return s
+              return ''
 
-          # "итого" row = first row at/after the AMAZON row containing a cell == "итого"
-          total_idx = -1
-          if date_idx >= 0:
-              for i in range(date_idx, len(rows)):
-                  if any(norm(c) == 'итого' for c in rows[i]):
-                      total_idx = i
-                      break
-              if total_idx < 0:  # fallback: contains "итого" as substring
-                  for i in range(date_idx, len(rows)):
-                      if any('итого' in norm(c) for c in rows[i]):
-                          total_idx = i
-                          break
+          # The sheet stacks one block per month (Январь / Февраль / ... / Май), each with its
+          # own AMAZON (dates) and ИТОГО rows. Pick the block for the CURRENT month.
+          MONTH_NAMES = {1:'январь',2:'февраль',3:'март',4:'апрель',5:'май',6:'июнь',7:'июль',
+                         8:'август',9:'сентябрь',10:'октябрь',11:'ноябрь',12:'декабрь'}
+          ALL_MONTHS = set(MONTH_NAMES.values())
+          cur_name = MONTH_NAMES[CUR_MONTH]
+
+          month_header_rows = [i for i, r in enumerate(rows) if first_cell_norm(r) in ALL_MONTHS]
+          start = next((i for i in month_header_rows if first_cell_norm(rows[i]) == cur_name), None)
+          if start is None and month_header_rows:
+              start = month_header_rows[-1]          # fallback: latest month block present
+          if start is None:
+              start = 0
+          end = next((i for i in month_header_rows if i > start), len(rows))
+          block = range(start, end)
+
+          # within the current-month block: AMAZON = date header, "ИТОГО по AMAZON" = $ totals
+          date_idx = next((i for i in block if any(norm(c) == 'amazon' for c in rows[i])), -1)
+          total_idx = next((i for i in block if i > date_idx and any(norm(c) == 'итого по amazon' for c in rows[i])), -1)
+          if total_idx < 0:
+              total_idx = next((i for i in block if i > date_idx and any('итого' in norm(c) for c in rows[i])), -1)
 
           days = []
           if date_idx >= 0 and total_idx >= 0:
@@ -137,9 +146,9 @@ jobs:
               by_date[rec['date']] = rec['revenue']
           days = [{'date': k, 'revenue': v} for k, v in sorted(by_date.items())]
 
-          # drop days that haven't happened yet (future relative to today, UTC)
+          # keep only days that already happened (<= today) and have real (non-zero) sales
           today = now.strftime('%Y-%m-%d')
-          days = [d for d in days if d['date'] <= today]
+          days = [d for d in days if d['date'] <= today and d['revenue']]
 
           def first_label(r):
               for c in r:
@@ -148,8 +157,10 @@ jobs:
               return ''
 
           debug = {
-              'row_labels': [{'i': i, 'label': first_label(r)[:45], 'ncols': len(r)} for i, r in enumerate(rows)],
-              'itogo_candidates': [{'i': i, 'label': first_label(rows[i])[:45]} for i in range(len(rows)) if any('итого' in norm(c) for c in rows[i])],
+              'cur_month_name': cur_name,
+              'block_start': start,
+              'block_end': end,
+              'block_start_label': first_cell_norm(rows[start]) if start < len(rows) else None,
               'amazon_row_raw': [str(c) for c in rows[date_idx]] if date_idx >= 0 else None,
               'total_row_raw': [str(c) for c in rows[total_idx]] if total_idx >= 0 else None,
           }
