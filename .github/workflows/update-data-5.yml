@@ -150,31 +150,16 @@ jobs:
           today = now.strftime('%Y-%m-%d')
           days = [d for d in days if d['date'] <= today and d['revenue']]
 
-          def first_label(r):
-              for c in r:
-                  if str(c or '').strip():
-                      return str(c).strip()
-              return ''
-
-          debug = {
-              'cur_month_name': cur_name,
-              'block_start': start,
-              'block_end': end,
-              'block_start_label': first_cell_norm(rows[start]) if start < len(rows) else None,
-              'amazon_row_raw': [str(c) for c in rows[date_idx]] if date_idx >= 0 else None,
-              'total_row_raw': [str(c) for c in rows[total_idx]] if total_idx >= 0 else None,
-          }
-
           payload = {
               'generated_at': now.strftime('%Y-%m-%dT%H:%M:%SZ'),
               'currency': 'USD',
               'source': url,
               'sheet_view': f'https://docs.google.com/spreadsheets/d/{sheet_id}/edit?gid={gid}',
               'current_month': f'{CUR_YEAR:04d}-{CUR_MONTH:02d}',
+              'total_label': 'ИТОГО по AMAZON',
               'day_count': len(days),
               'amazon_row_index': date_idx,
               'total_row_index': total_idx,
-              '_debug': debug,
               'days': days,
           }
           os.makedirs('data', exist_ok=True)
