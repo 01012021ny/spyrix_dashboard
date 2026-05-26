@@ -1,13 +1,63 @@
 {
-  "generated_at": "2026-05-26T05:50:56Z",
+  "generated_at": "2026-05-26T10:19:42Z",
   "currency": "USD",
   "source": "https://docs.google.com/spreadsheets/d/1WG-XENqaWzjAv7L-B9lWO9n5tRRvpDzOphSZoTFsrxQ/export?format=csv&gid=1716802263",
   "sheet_view": "https://docs.google.com/spreadsheets/d/1WG-XENqaWzjAv7L-B9lWO9n5tRRvpDzOphSZoTFsrxQ/edit?gid=1716802263",
   "current_month": "2026-05",
-  "total_label": "ИТОГО по AMAZON",
-  "day_count": 24,
+  "total_label": "сумма строк-площадок AMAZON",
+  "day_count": 25,
   "amazon_row_index": 83,
   "total_row_index": 91,
+  "_debug_tail": [
+    {
+      "date": "2026-05-24",
+      "detail_sum": 1965.15,
+      "detail_nonempty": 7,
+      "total_cell": 1965.15
+    },
+    {
+      "date": "2026-05-25",
+      "detail_sum": 2336.09,
+      "detail_nonempty": 7,
+      "total_cell": 2336.09
+    },
+    {
+      "date": "2026-05-26",
+      "detail_sum": null,
+      "detail_nonempty": 0,
+      "total_cell": 0.0
+    },
+    {
+      "date": "2026-05-27",
+      "detail_sum": null,
+      "detail_nonempty": 0,
+      "total_cell": 0.0
+    },
+    {
+      "date": "2026-05-28",
+      "detail_sum": null,
+      "detail_nonempty": 0,
+      "total_cell": 0.0
+    },
+    {
+      "date": "2026-05-29",
+      "detail_sum": null,
+      "detail_nonempty": 0,
+      "total_cell": 0.0
+    },
+    {
+      "date": "2026-05-30",
+      "detail_sum": null,
+      "detail_nonempty": 0,
+      "total_cell": 0.0
+    },
+    {
+      "date": "2026-05-31",
+      "detail_sum": null,
+      "detail_nonempty": 0,
+      "total_cell": 0.0
+    }
+  ],
   "days": [
     {
       "date": "2026-05-01",
@@ -23,7 +73,7 @@
     },
     {
       "date": "2026-05-04",
-      "revenue": 2003.95
+      "revenue": 2003.9499999999998
     },
     {
       "date": "2026-05-05",
@@ -67,7 +117,7 @@
     },
     {
       "date": "2026-05-15",
-      "revenue": 1772.95
+      "revenue": 1772.9499999999998
     },
     {
       "date": "2026-05-16",
@@ -104,6 +154,10 @@
     {
       "date": "2026-05-24",
       "revenue": 1965.15
+    },
+    {
+      "date": "2026-05-25",
+      "revenue": 2336.09
     }
   ]
 }
