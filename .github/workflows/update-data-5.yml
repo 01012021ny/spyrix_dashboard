@@ -129,26 +129,35 @@ jobs:
           if total_idx < 0:
               total_idx = next((i for i in block if i > date_idx and any('итого' in norm(c) for c in rows[i])), -1)
 
+          # Daily AMAZON revenue = sum of the platform detail rows between the AMAZON
+          # date header and the "ИТОГО по AMAZON" row. Stays correct even when the sheet's
+          # own ИТОГО formula has not been filled in yet for the latest day.
           days = []
+          tail_debug = []
           if date_idx >= 0 and total_idx >= 0:
-              drow, trow = rows[date_idx], rows[total_idx]
+              drow = rows[date_idx]
+              trow = rows[total_idx]
+              detail_rows = [rows[i] for i in range(date_idx + 1, total_idx)]
               for j in range(len(drow)):
                   d = parse_cell_date(drow[j])
                   if not d:
                       continue
-                  v = num(trow[j]) if j < len(trow) else None
-                  if v is None:
+                  nonempty = [num(r[j]) for r in detail_rows if j < len(r) and num(r[j]) is not None]
+                  total_cell = num(trow[j]) if j < len(trow) else None
+                  tail_debug.append({'date': d, 'detail_sum': round(sum(nonempty), 2) if nonempty else None,
+                                     'detail_nonempty': len(nonempty), 'total_cell': total_cell})
+                  if not nonempty:
                       continue
-                  days.append({'date': d, 'revenue': v})
+                  days.append({'date': d, 'revenue': sum(nonempty)})
 
           by_date = {}
           for rec in days:
               by_date[rec['date']] = rec['revenue']
           days = [{'date': k, 'revenue': v} for k, v in sorted(by_date.items())]
 
-          # keep only days that already happened (<= today) and have real (non-zero) sales
+          # keep only days that already happened (<= today, UTC)
           today = now.strftime('%Y-%m-%d')
-          days = [d for d in days if d['date'] <= today and d['revenue']]
+          days = [d for d in days if d['date'] <= today]
 
           payload = {
               'generated_at': now.strftime('%Y-%m-%dT%H:%M:%SZ'),
@@ -156,10 +165,11 @@ jobs:
               'source': url,
               'sheet_view': f'https://docs.google.com/spreadsheets/d/{sheet_id}/edit?gid={gid}',
               'current_month': f'{CUR_YEAR:04d}-{CUR_MONTH:02d}',
-              'total_label': 'ИТОГО по AMAZON',
+              'total_label': 'сумма строк-площадок AMAZON',
               'day_count': len(days),
               'amazon_row_index': date_idx,
               'total_row_index': total_idx,
+              '_debug_tail': tail_debug[-8:],
               'days': days,
           }
           os.makedirs('data', exist_ok=True)
