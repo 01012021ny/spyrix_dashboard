@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-29T23:45:04Z",
+  "generated_at": "2026-05-30T04:30:10Z",
   "source": "https://docs.google.com/spreadsheets/d/1GCG1CLIxp_PIAPfQKmhpwyoXoCWhZkIr5NAqMx239OE/export?format=xlsx",
-  "sheet_count": 117,
+  "sheet_count": 118,
   "skipped_month_tabs": [
     "2026.05",
     "2026.04",
@@ -4542,6 +4542,42 @@
         "iOS": {
           "revenue": 11169.0,
           "sales": 13.0,
+          "promo": 0.0
+        }
+      }
+    },
+    {
+      "sheet": "2026-05-29",
+      "date": "2026-05-29",
+      "revenue": 26515.0,
+      "sales": 40.0,
+      "promo": 2.0,
+      "by_type": {
+        "Автопродление": {
+          "revenue": 18306.0,
+          "sales": 30.0,
+          "promo": 0.0
+        },
+        "Первичный заказ": {
+          "revenue": 8209.0,
+          "sales": 10.0,
+          "promo": 2.0
+        }
+      },
+      "by_platform": {
+        "macOS": {
+          "revenue": 2940.0,
+          "sales": 6.0,
+          "promo": 0.0
+        },
+        "Windows": {
+          "revenue": 7082.0,
+          "sales": 14.0,
+          "promo": 2.0
+        },
+        "iOS": {
+          "revenue": 16493.0,
+          "sales": 20.0,
           "promo": 0.0
         }
       }
