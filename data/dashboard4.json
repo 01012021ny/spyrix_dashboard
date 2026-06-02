@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-02T02:01:40Z",
+  "generated_at": "2026-06-02T07:10:41Z",
   "source": "https://docs.google.com/spreadsheets/d/1CpbVwXbghwj0YZmPKdcVu8s6owvkGfhxHWIYvc9A8BI/export?format=csv&gid=742078980",
   "sheet_view": "https://docs.google.com/spreadsheets/d/1CpbVwXbghwj0YZmPKdcVu8s6owvkGfhxHWIYvc9A8BI/edit?gid=742078980",
-  "day_count": 151,
+  "day_count": 152,
   "date_row_index": 0,
   "total_row_index": 9,
   "total_rows_found": 7,
@@ -610,6 +610,10 @@
     {
       "date": "2026-05-31",
       "revenue": 217472.0
+    },
+    {
+      "date": "2026-06-01",
+      "revenue": 259559.0
     }
   ]
 }
