@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-04T02:10:37Z",
+  "generated_at": "2026-06-04T07:10:29Z",
   "currency": "USD",
   "source": "https://docs.google.com/spreadsheets/d/1WG-XENqaWzjAv7L-B9lWO9n5tRRvpDzOphSZoTFsrxQ/export?format=csv&gid=1716802263",
   "sheet_view": "https://docs.google.com/spreadsheets/d/1WG-XENqaWzjAv7L-B9lWO9n5tRRvpDzOphSZoTFsrxQ/edit?gid=1716802263",
   "current_month": "2026-06",
   "total_label": "сумма строк-площадок AMAZON",
-  "day_count": 2,
+  "day_count": 3,
   "amazon_row_index": 104,
   "total_row_index": 112,
   "days": [
@@ -16,6 +16,10 @@
     {
       "date": "2026-06-02",
       "revenue": 1902.48
+    },
+    {
+      "date": "2026-06-03",
+      "revenue": 2570.27
     }
   ]
 }
