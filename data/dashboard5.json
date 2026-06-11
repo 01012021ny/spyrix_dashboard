@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T07:17:18Z",
+  "generated_at": "2026-06-11T11:59:23Z",
   "currency": "USD",
   "source": "https://docs.google.com/spreadsheets/d/1WG-XENqaWzjAv7L-B9lWO9n5tRRvpDzOphSZoTFsrxQ/export?format=csv&gid=1716802263",
   "sheet_view": "https://docs.google.com/spreadsheets/d/1WG-XENqaWzjAv7L-B9lWO9n5tRRvpDzOphSZoTFsrxQ/edit?gid=1716802263",
@@ -47,7 +47,7 @@
     },
     {
       "date": "2026-06-10",
-      "revenue": 498.76
+      "revenue": 2394.84
     }
   ]
 }
